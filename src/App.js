@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+ import './App.css';
+import React from 'react';
+import List from './list';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+  constructor(){
+    super();
+    this.state={
+      user:[]
+    }
+  }
+  
+ 
+  render(){
+    return(<>
+        <h1 className="h1formate">ROBOT FFRIENDS</h1>
+        <div className='formate'> <List mylist = {this.state.user}/></div>
+        
+        </>
+    )
+}
+
+
+componentDidMount(){
+
+    //api call
+    fetch("https://jsonplaceholder.typicode.com/users")
+    .then((response)=>{
+        return response.json();
+    })
+    .then(data => this.setState({user: data}));
+   
+}
 }
 
 export default App;
