@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dewasedimple/ROBOFRIEND.git/static/css/main.d3513b1a.css",
+    "main.js": "/dewasedimple/ROBOFRIEND.git/static/js/main.6d4ed755.js",
+    "static/js/787.32032a02.chunk.js": "/dewasedimple/ROBOFRIEND.git/static/js/787.32032a02.chunk.js",
+    "index.html": "/dewasedimple/ROBOFRIEND.git/index.html",
+    "main.d3513b1a.css.map": "/dewasedimple/ROBOFRIEND.git/static/css/main.d3513b1a.css.map",
+    "main.6d4ed755.js.map": "/dewasedimple/ROBOFRIEND.git/static/js/main.6d4ed755.js.map",
+    "787.32032a02.chunk.js.map": "/dewasedimple/ROBOFRIEND.git/static/js/787.32032a02.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3513b1a.css",
+    "static/js/main.6d4ed755.js"
+  ]
+}
